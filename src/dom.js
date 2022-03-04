@@ -51,12 +51,12 @@ export const domManager = (function(){
         taskButton.textContent = "Create new task"
         taskView.appendChild(taskButton)
 
-        const btnDelete = document.querySelectorAll(".delete-task")
-        btnDelete.addEventListener("click", () => {
-            mainLogic.deleteTask(project)
-            renderTasks(project)
+        /* Add listeners for the addTask button and all the deleteTask buttons */
+        taskButton.addEventListener("click", () => {
+            const form = document.querySelector(".task-hidden")
+            form.classList.remove("task-hidden")
+            form.setAttribute("id","task-form-view")
         })
-        
     }
 
     function renderProjects(allProjects){
