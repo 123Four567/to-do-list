@@ -44,12 +44,12 @@ aside{
 .project-nav li{
 	padding: 10px;
 	text-align: center;
-	border-bottom: 3px solid gray;
 }
 
 .project-nav li:hover{
 	cursor: pointer;
 	background-color: honeydew;
+	border-radius: 10px;
 }
 
 .task-view{
